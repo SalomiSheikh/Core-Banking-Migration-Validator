@@ -1,0 +1,11 @@
+Exception_ID,Entity,Record_ID,Field,Source_Value,Target_Value,Exception_Type,Severity,Status,Owner,Root_Cause,Resolution
+EXC-CUST-001,Customer,C1003,status,CLOSED,ACTIVE,FIELD_MISMATCH,HIGH,RESOLVED,Migration Team,,Correct target customer status from ACTIVE to CLOSED
+EXC-CUST-002,Customer,C1005,,,,MISSING,HIGH,RESOLVED,Migration Team,Customer record was not migrated to target system,Create customer C1005 in the target system using the source customer data
+EXC-CUST-003,Customer,C1006,,,,UNEXPECTED,HIGH,RESOLVED,Migration Team,Customer record exists in target system but was not present in source migration data,Validate C1006 and remove the record from the target system if it is not a valid migrated customer
+EXC-ACC-001,Account,A10002,balance,125000,120000,FIELD_MISMATCH,CRITICAL,RESOLVED,Migration Team,Account balance transformation issue,Correct target balance from 120000 to source value 125000
+EXC-ACC-002,Account,A10003,status,CLOSED,ACTIVE,FIELD_MISMATCH,HIGH,RESOLVED,Migration Team,Account status transformation issue during migration,Correct target account A10003 status from ACTIVE to CLOSED
+EXC-ACC-003,Account,A10005,,,,MISSING,HIGH,RESOLVED,Migration Team,Account A10005 was not migrated to the target system,Create account A10005 in the target system using the source account data
+EXC-ACC-004,Account,A10006,,,,UNEXPECTED,HIGH,RESOLVED,Migration Team,Account A10006 exists in the target system but was not present in source migration data,Validate A10006 and remove the account from the target system if it is not an authorized migrated account
+EXC-TXN-001,Transaction,T10002,amount,25000,23000,FIELD_MISMATCH,CRITICAL,RESOLVED,Migration Team,Transaction amount transformation issue during migration,Correct target transaction T10002 amount from 23000 to source value 25000
+EXC-TXN-002,Transaction,T10005,,,,MISSING,HIGH,RESOLVED,Migration Team,Transaction T10005 was not migrated to the target system,Create transaction T10005 in the target system using the source transaction data
+EXC-TXN-003,Transaction,T10006,,,,UNEXPECTED,HIGH,RESOLVED,Migration Team,Transaction T10006 exists in the target system but was not present in source migration data,Validate T10006 and remove the transaction from the target system if it is not an authorized migrated transaction

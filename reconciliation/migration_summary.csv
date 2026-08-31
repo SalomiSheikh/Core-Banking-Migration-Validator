@@ -1,0 +1,6 @@
+Entity,Source Count,Target Count,Missing,Unexpected,Mismatches,Status
+Customer,5,5,0,0,0,PASSED
+Account,5,5,0,0,0,PASSED
+Customer-Account,5,5,0,0,0,PASSED
+Transaction,5,5,0,0,0,PASSED
+Duplicate,,,0,0,0,PASSED

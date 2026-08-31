@@ -1,0 +1,138 @@
+========================================
+ CORE BANKING MIGRATION VALIDATION REPORT
+========================================
+
+----------------------------------------
+CUSTOMER VALIDATION
+----------------------------------------
+Migration Validator Started
+Source customers: 5
+Target customers: 5
+
+Checking customer migration...
+STATUS MISMATCH: C1003
+  Source : CLOSED
+  Target : ACTIVE
+MISSING IN TARGET: C1005
+
+Checking for unexpected customers...
+UNEXPECTED IN TARGET: C1006
+
+================================
+     MIGRATION VALIDATION REPORT
+================================
+Total Source Customers : 5
+Total Target Customers : 5
+Missing Customers      : 1
+Unexpected Customers   : 1
+Data Mismatches        : 1
+Migration Status       : FAILED
+================================
+
+----------------------------------------
+ACCOUNT VALIDATION
+----------------------------------------
+Account Migration Validator Started
+Source accounts: 5
+Target accounts: 5
+
+Checking account migration...
+BALANCE MISMATCH: A10002
+  Source : 125000
+  Target : 120000
+STATUS MISMATCH: A10003
+  Source : CLOSED
+  Target : ACTIVE
+MISSING IN TARGET: A10005
+
+Checking for unexpected accounts...
+UNEXPECTED IN TARGET: A10006
+
+================================
+     ACCOUNT MIGRATION REPORT
+================================
+Total Source Accounts : 5
+Total Target Accounts : 5
+Missing Accounts      : 1
+Unexpected Accounts   : 1
+Data Mismatches       : 2
+Migration Status      : FAILED
+================================
+
+----------------------------------------
+CUSTOMER-ACCOUNT VALIDATION
+----------------------------------------
+Customer-Account Relationship Validator Started
+Target customers: 5
+Target accounts: 5
+
+Checking customer-account relationships...
+
+================================
+ CUSTOMER-ACCOUNT VALIDATION
+================================
+Target Customers : 5
+Target Accounts  : 5
+Orphan Accounts  : 0
+Relationship Status : PASSED
+================================
+
+----------------------------------------
+TRANSACTION VALIDATION
+----------------------------------------
+Transaction Migration Validator Started
+Source transactions: 5
+Target transactions: 5
+
+Checking transaction migration...
+AMOUNT MISMATCH: T10002
+  Source : 25000
+  Target : 23000
+MISSING IN TARGET: T10005
+
+Checking for unexpected transactions...
+UNEXPECTED IN TARGET: T10006
+
+================================
+  TRANSACTION MIGRATION REPORT
+================================
+Total Source Transactions : 5
+Total Target Transactions : 5
+Missing Transactions       : 1
+Unexpected Transactions    : 1
+Data Mismatches            : 1
+Migration Status           : FAILED
+================================
+
+----------------------------------------
+DUPLICATE VALIDATION
+----------------------------------------
+Duplicate Record Validator Started
+
+Checking: Customer
+No duplicates found
+
+Checking: Account
+No duplicates found
+
+Checking: Transaction
+No duplicates found
+
+================================
+   DUPLICATE VALIDATION REPORT
+================================
+Duplicate Records : 0
+Duplicate Status  : PASSED
+================================
+
+========================================
+       OVERALL MIGRATION RESULT
+========================================
+Customer                      : FAILED
+Account                       : FAILED
+Customer-Account              : PASSED
+Transaction                   : FAILED
+Duplicate                     : FAILED
+----------------------------------------
+OVERALL MIGRATION STATUS      : FAILED
+========================================

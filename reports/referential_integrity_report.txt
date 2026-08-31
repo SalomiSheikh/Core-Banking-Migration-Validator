@@ -1,0 +1,19 @@
+============================================================
+       REFERENTIAL INTEGRITY VALIDATION REPORT
+============================================================
+
+ACCOUNT → CUSTOMER VALIDATION
+------------------------------------------------------------
+PASSED - All accounts have valid customers.
+
+TRANSACTION → ACCOUNT VALIDATION
+------------------------------------------------------------
+PASSED - All transactions have valid accounts.
+
+============================================================
+OVERALL DATA QUALITY STATUS
+============================================================
+Orphan Accounts     : 0
+Orphan Transactions  : 0
+Total Exceptions     : 0
+STATUS              : PASSED

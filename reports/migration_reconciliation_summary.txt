@@ -1,0 +1,25 @@
+============================================================
+             MIGRATION RECONCILIATION SUMMARY
+============================================================
+
+ENTITY                  SOURCE   TARGET   STATUS
+------------------------------------------------------------
+Customer                     5        5   FAILED
+Account                      5        5   FAILED
+Transaction                  5        5   FAILED
+
+EXCEPTION SUMMARY
+------------------------------------------------------------
+Missing                  : 3
+Unexpected               : 3
+Field Mismatches         : 4
+Total Exceptions         : 10
+
+DATA QUALITY
+------------------------------------------------------------
+Account → Customer       : PASSED
+Transaction → Account    : PASSED
+
+============================================================
+OVERALL MIGRATION STATUS : FAILED
+============================================================

@@ -1,0 +1,33 @@
+============================================================
+          MASTER MIGRATION EXCEPTION REPORT
+============================================================
+
+CUSTOMER EXCEPTIONS
+------------------------------------------------------------
+Missing       : 0
+Unexpected    : 0
+Mismatches    : 0
+Total         : 0
+
+ACCOUNT EXCEPTIONS
+------------------------------------------------------------
+Missing       : 0
+Unexpected    : 0
+Mismatches    : 0
+Total         : 0
+
+TRANSACTION EXCEPTIONS
+------------------------------------------------------------
+Missing       : 0
+Unexpected    : 0
+Mismatches    : 0
+Total         : 0
+
+============================================================
+OVERALL EXCEPTION SUMMARY
+============================================================
+Total Missing       : 0
+Total Unexpected    : 0
+Total Mismatches    : 0
+TOTAL EXCEPTIONS    : 0
+OVERALL STATUS      : PASSED
